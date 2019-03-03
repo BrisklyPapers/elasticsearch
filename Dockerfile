@@ -1,3 +1,3 @@
-FROM elasticsearch:latest
+FROM elasticsearch:6.6.1
 
-RUN /usr/share/elasticsearch/bin/elasticsearch-plugin install --batch mapper-attachments
+RUN /usr/share/elasticsearch/bin/elasticsearch-plugin install --batch ingest-attachment
